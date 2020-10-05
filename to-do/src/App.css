@@ -1,0 +1,117 @@
+* {
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.container {
+  background-image: url("./back1.JPG");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin: auto;
+}
+
+.ToDos {
+  height: 400px;
+  width: 30%;
+  margin: auto;
+  margin-top: 70px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 247, 201, 1) 0%,
+    rgba(202, 255, 198, 1) 100%,
+    rgba(58, 255, 155, 1) 100%
+  );
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.63);
+  box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.63);
+  transition: width 1s, height 1s;
+  overflow-y: scroll;
+}
+
+.ListItem {
+  height: 35px;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 1%;
+  padding-top: 7px;
+  color: white;
+
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(5, 85, 80, 1) 0%,
+    rgba(89, 125, 86, 1) 100%,
+    rgba(58, 255, 155, 1) 100%
+  );
+}
+
+p {
+  margin-right: 7px;
+  width: 7%;
+  height: 20px;
+  font-size: 15px;
+  float: right;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  border-radius: 4px;
+  padding-top: 1%;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.input {
+  width: 20%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.inputBtn {
+  width: 10%;
+  height: 43px;
+  box-shadow: inset 0px 1px 0px 0px #fce2c1;
+  background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+  background-color: #ffc477;
+  border-radius: 6px;
+  border: 1px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #cc9f52;
+}
+
+h1 {
+  margin-top: 2.5em;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: white;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.88);
+}
+
+@media only screen and (max-width: 600px) {
+  .ToDos {
+    width: 90%;
+  }
+
+  .input {
+    width: 60%;
+  }
+  .inputBtn {
+    width: 30%;
+  }
+}
